@@ -1,4 +1,4 @@
-import { css, unsafeCSS } from "lit-element";
+import { css, unsafeCSS } from "../../web_modules/lit-element";
 import "./typography";
 import { colors } from "./colors";
 import { customProperties } from "./custom-properties";
