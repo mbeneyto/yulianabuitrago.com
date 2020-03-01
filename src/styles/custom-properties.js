@@ -1,8 +1,8 @@
-import { css } from "../../web_modules/lit-element";
+import { css } from 'lit-element';
 
 export const customProperties = css`
-  --primary-font-family: "Fjalla One", "Helvetica", sans-serif;
-  --secondary-font-family: "Source Sans Pro", "Helvetica", sans-serif;
+  --primary-font-family: 'Fjalla One', 'Helvetica', sans-serif;
+  --secondary-font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
 
   --text-color: rgba(var(--secondary-color), 1);
   --app-background: rgba(var(--primary-color), 1);

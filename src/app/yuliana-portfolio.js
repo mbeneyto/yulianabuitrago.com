@@ -1,6 +1,6 @@
-import { html, css, LitElement } from "../../web_modules/lit-element";
-import { commonStyles, appStyles } from "../styles";
-import "../components/title";
+import { html, css, LitElement } from 'lit-element';
+import { commonStyles, appStyles } from '../styles';
+import '../components/title';
 
 export class YulianaPortfolio extends LitElement {
   static get styles() {
@@ -13,6 +13,7 @@ export class YulianaPortfolio extends LitElement {
       }
     `;
   }
+
   render() {
     return html`
       <my-title></my-title>
