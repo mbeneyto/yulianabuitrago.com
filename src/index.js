@@ -1,4 +1,4 @@
-import { YulianaPortfolio } from "./app/yuliana-portfolio";
-import "../web_modules/construct-style-sheets-polyfill.js";
+import 'construct-style-sheets-polyfill';
+import { YulianaPortfolio } from './app/yuliana-portfolio';
 
-window.customElements.define("yuliana-portfolio", YulianaPortfolio);
+window.customElements.define('yuliana-portfolio', YulianaPortfolio);

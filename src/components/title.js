@@ -1,4 +1,4 @@
-import { css, html, LitElement } from "../../web_modules/lit-element";
+import { css, html, LitElement } from 'lit-element';
 
 export class MyTitle extends LitElement {
   static get styles() {
@@ -7,7 +7,7 @@ export class MyTitle extends LitElement {
         h1 {
           color: var(--text-color);
         }
-      `
+      `,
     ];
   }
 
@@ -18,4 +18,4 @@ export class MyTitle extends LitElement {
   }
 }
 
-window.customElements.define("my-title", MyTitle);
+window.customElements.define('my-title', MyTitle);

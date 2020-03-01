@@ -1,3 +1,3 @@
-import { css } from "../../../web_modules/lit-element";
+import { css } from 'lit-element';
 
 export const darkTheme = css``;

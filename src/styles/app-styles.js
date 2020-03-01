@@ -1,8 +1,8 @@
-import { css, unsafeCSS } from "../../web_modules/lit-element";
-import "./typography";
-import { colors } from "./colors";
-import { customProperties } from "./custom-properties";
-import { themes } from "./themes";
+import { css, unsafeCSS } from 'lit-element';
+import './typography';
+import { colors } from './colors';
+import { customProperties } from './custom-properties';
+import { themes } from './themes';
 
 export const appStyles = css`
   :host {
@@ -10,11 +10,11 @@ export const appStyles = css`
     ${customProperties}
   }
 
-  :host([theme="light"]) {
+  :host([theme='light']) {
     ${unsafeCSS(themes.lightTheme)}
   }
 
-  :host([theme="dark"]) {
+  :host([theme='dark']) {
     ${unsafeCSS(themes.darkTheme)}
   }
 `;
