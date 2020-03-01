@@ -1,0 +1,39 @@
+{
+  "name": "yulianabuitrago.com",
+  "description": "Yuliana's Portfolio page <https://www.linkedin.com/in/yulianabglez>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Marcos Beneyto <https://www.linkedin.com/in/mbeneytofdez>",
+  "homepage": "https://github.com/mbeneyto/yulianabuitrago.com#readme",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "snowpack --include './src/*'",
+    "prepare": "snowpack --include './src/*'",
+    "start": "es-dev-server --config es-dev-server.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbeneyto/yulianabuitrago.com.git"
+  },
+  "dependencies": {
+    "construct-style-sheets-polyfill": "^2.3.5",
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.41.0",
+    "snowpack": "^1.5.0"
+  },
+  "keywords": [],
+  "snowpack": {
+    "webDependencies": [
+      "lit-html",
+      "lit-element",
+      "lit-html/directives/until.js"
+    ],
+    "dedupe": [
+      "lit-element",
+      "lit-html"
+    ]
+  }
+}
