@@ -1,4 +1,4 @@
-import { css } from "lit-element";
+import { css } from "../../web_modules/lit-element";
 
 export const colors = css`
   --pure-black: 0, 0, 0;

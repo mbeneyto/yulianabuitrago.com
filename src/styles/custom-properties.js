@@ -1,4 +1,4 @@
-import { css } from "lit-element";
+import { css } from "../../web_modules/lit-element";
 
 export const customProperties = css`
   --primary-font-family: "Fjalla One", "Helvetica", sans-serif;

@@ -1,4 +1,4 @@
-import { css, html, LitElement } from "lit-element";
+import { css, html, LitElement } from "../../web_modules/lit-element";
 
 export class MyTitle extends LitElement {
   static get styles() {
