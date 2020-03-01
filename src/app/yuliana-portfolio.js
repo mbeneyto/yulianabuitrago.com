@@ -1,9 +1,4 @@
-import {
-  html,
-  css,
-  unsafeCSS,
-  LitElement
-} from "../../web_modules/lit-element";
+import { html, css, LitElement } from "../../web_modules/lit-element";
 import { commonStyles, appStyles } from "../styles";
 import "../components/title";
 

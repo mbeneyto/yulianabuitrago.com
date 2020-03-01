@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "snowpack --include './src/*'",
-    "build:production": "snowpack --include './src/*' --optimize --nomodule ./src/index.js",
+    "build:prod": "snowpack --include './src/*' --optimize --nomodule ./src/index.js",
     "deploy": "npm run build:production && netlify deploy",
     "prepare": "npm run build",
     "start": "es-dev-server --config es-dev-server.config.js"

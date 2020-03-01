@@ -1,3 +1,3 @@
-# 👩‍💻 Yuliana Buitrago personal website
+# Yuliana Buitrago personal website 💅
 
-#### 🛠 Built with `Snowpack` + `lit-element` + `lit-html` 
+#### 🛠 Built with `Snowpack` + `lit-element` + `lit-html`
