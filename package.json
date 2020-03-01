@@ -7,11 +7,12 @@
   "homepage": "https://github.com/mbeneyto/yulianabuitrago.com#readme",
   "main": "index.js",
   "scripts": {
-    "build": "snowpack --include './src/*'",
-    "build:prod": "snowpack --include './src/*' --optimize --nomodule ./src/index.js",
-    "deploy": "npm run build:production && netlify deploy",
-    "prepare": "npm run build",
-    "start": "es-dev-server --config es-dev-server.config.js"
+    "build": "npm run build:js && npm run build:esm && npm run copy",
+    "build:js": "babel src/ -d dist",
+    "build:js:watch": "babel src/ -d dist --watch",
+    "build:esm": "snowpack --include \"dist/**/*.js\" --dest dist/web_modules",
+    "copy": "cpx index.html ./dist",
+    "dev": "npm run build && npm run build:js:watch & serve -s dist"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,9 @@
     "lit-html": "^1.1.2"
   },
   "devDependencies": {
-    "es-dev-server": "^1.41.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "cpx": "^1.5.0",
     "snowpack": "^1.5.0"
   },
   "keywords": [],
