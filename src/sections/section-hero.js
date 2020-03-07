@@ -11,14 +11,14 @@ class SectionHero extends LitElement {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          min-height: 400px; // fixme: use margin and padding with media querys
+          min-height: 500px; // fixme: use margin and padding with media querys
         }
 
         .title {
           font-size: 96px;
           line-height: 1.5;
           font-family: var(--primary-font-family);
-          color: var(--title-color);
+          color: var(--section-hero-title-color);
           margin: 0;
         }
 

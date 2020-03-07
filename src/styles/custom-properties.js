@@ -6,7 +6,6 @@ export const customProperties = css`
 
   --app-background: rgba(var(--primary-color), 1);
   --text-color: rgba(var(--secondary-color), 1);
-  --title-color: rgba(var(--light-accent-color), 1);
 
   --button-color: rgba(var(--primary-color), 1);
   --button-background-color: rgba(var(--secondary-color), 1);
@@ -17,9 +16,14 @@ export const customProperties = css`
 
   --section-menu-overlay-background: rgba(var(--regular-accent-color), 0.9);
 
+  --section-hero-title-color: rgba(var(--light-accent-color), 1);
+
+  --section-box-title-color: rgba(var(--bold-accent-color), 1);
+  --section-box-background-color: rgba(var(--wild-sand), 1);
+
   font-family: var(--secondary-font-family, sans-serif);
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.25;
   color: var(--text-color);
   background-color: var(--app-background);

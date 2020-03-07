@@ -10,6 +10,10 @@ export class ButtonIcon extends BaseButton {
           --button-color: var(--button-icon-color);
           --button-background-color: var(--button-icon-background-color);
         }
+
+        .button {
+          padding: 0;
+        }
       `,
     ];
   }
