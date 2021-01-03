@@ -1,8 +1,8 @@
 import { html, css, LitElement } from 'lit-element';
-import { linkedinIcon, mediumIcon, behanceIcon, twitterIcon } from '../components/icons';
-import '../components/buttons';
+import { linkedinIcon, mediumIcon, behanceIcon, twitterIcon } from '../icons';
+import '../buttons';
 
-class SectionHero extends LitElement {
+class SectionProjects extends LitElement {
   static get styles() {
     return [
       css`
@@ -11,7 +11,6 @@ class SectionHero extends LitElement {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          min-height: 500px; // fixme: use margin and padding with media querys
         }
 
         .title {
@@ -30,13 +29,16 @@ class SectionHero extends LitElement {
           transform: translate3d(0px, -70px, 0px);
         }
 
-        .social-media {
-          display: flex;
-          align-items: center;
+        .projects {
+          display: block;
+          width: calc(100% - 48px);
+          box-sizing: border-box;
+          margin: 0px 24px;
         }
 
-        .social-media-link {
-          padding: 0px 16px;
+        ::slotted(project-card) {
+          margin-bottom: 32px;
+          --project-card-width: 100%;
         }
       `,
     ];
@@ -57,7 +59,9 @@ class SectionHero extends LitElement {
       <h2 class="subtitle">
         <slot name="subtitle"></slot>
       </h2>
-      ${this.socialMediaTemplate}
+      <div class="projects">
+        <slot></slot>
+      </div>
     `;
   }
 
@@ -83,4 +87,4 @@ class SectionHero extends LitElement {
   }
 }
 
-window.customElements.define('section-hero', SectionHero);
+window.customElements.define('section-projects', SectionProjects);

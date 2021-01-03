@@ -1,21 +1,22 @@
 import { html, css, LitElement } from 'lit-element';
 import { Router } from '@vaadin/router';
-import { commonStyles, appStyles } from '../styles';
-import '../sections/section-header';
-import '../sections/section-menu';
-import '../components/title';
+import { appStyles } from '../styles';
+import '../components/sections/section-header';
+import '../components/sections/section-menu';
 import '../pages/page-home';
 
 export class YulianaPortfolio extends LitElement {
   static get styles() {
-    return css`
-      ${commonStyles}
-      ${appStyles}
+    return [
+      css`
+        ${appStyles}
+        ${appStyles}
 
-      :host {
-        display: block;
-      }
-    `;
+        :host {
+          display: block;
+        }
+      `,
+    ];
   }
 
   static get properties() {
@@ -26,7 +27,7 @@ export class YulianaPortfolio extends LitElement {
 
   render() {
     return html`
-      <section-header @open-menu=${this._menuButtonClicked}></section-header>
+      <section-header @open-menu=${this._headerButtonClick}></section-header>
       <section-menu ?open=${this._isMenuOpen} @close-menu=${this._closeMenu}> </section-menu>
       <main role="main" class="main" id="main"></main>
     `;
@@ -43,13 +44,19 @@ export class YulianaPortfolio extends LitElement {
   firstUpdated() {
     const router = new Router(this.shadowRoot.getElementById('main'));
     router.setRoutes([
-      { path: '/', component: 'page-home' },
+      {
+        path: '/',
+        component: 'page-home',
+        action: async () => {
+          await import('../pages/page-home.js');
+        },
+      },
       {
         path: '/about',
+        component: 'page-about',
         action: async () => {
           await import('../pages/page-about.js');
         },
-        component: 'page-about',
       },
     ]);
   }
@@ -66,7 +73,7 @@ export class YulianaPortfolio extends LitElement {
     this._updateMenuState(false);
   }
 
-  _menuButtonClicked() {
+  _headerButtonClick() {
     this._updateMenuState(true);
   }
 }

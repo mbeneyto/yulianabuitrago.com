@@ -69,9 +69,9 @@ class SectionBox extends LitElement {
   render() {
     return html`
       <div class="box">
-        <h1 class="title">
+        <h4 class="title">
           <slot name="title"></slot>
-        </h1>
+        </h4>
         <p class="text">
           <slot name="text"></slot>
         </p>
