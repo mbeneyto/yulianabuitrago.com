@@ -1,6 +1,6 @@
 import { html, css, LitElement } from 'lit-element';
-import { menuIcon } from '../components/icons';
-import '../components/buttons';
+import { menuIcon } from '../icons';
+import '../buttons';
 
 class SectionHeader extends LitElement {
   static get styles() {
@@ -11,11 +11,20 @@ class SectionHeader extends LitElement {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 24px 16px;
+          padding: 24px;
         }
 
         .logo {
-          width: 100px;
+          font-size: 20px;
+          line-height: 1.5;
+          font-family: var(--primary-font-family);
+          color: var(--section-header-logo-name-color);
+          margin: 0;
+        }
+
+        .logo span:last-child {
+          margin-left: -4px;
+          color: var(--section-header-logo-lastname-color);
         }
       `,
     ];
@@ -23,14 +32,10 @@ class SectionHeader extends LitElement {
 
   render() {
     return html`
-      ${this.mobileTemplate}
-    `;
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  get mobileTemplate() {
-    return html`
-      <img class="logo" src="../../assets/images/logo.svg" />
+      <div class="logo">
+        <span>Yuliana</span>
+        <span>Buitrago</span>
+      </div>
       <button-icon @click=${this._openMenu}>
         ${menuIcon}
       </button-icon>

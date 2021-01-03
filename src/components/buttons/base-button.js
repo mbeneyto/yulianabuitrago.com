@@ -5,6 +5,7 @@ export class BaseButton extends LitElement {
     return [
       css`
         .button {
+          position: relative;
           box-sizing: border-box;
           display: flex;
           align-items: center;

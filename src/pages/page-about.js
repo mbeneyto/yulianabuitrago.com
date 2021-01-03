@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit-element';
-import '../sections/section-hero';
+import '../components/sections/section-hero';
 
 class PageAbout extends LitElement {
   render() {
