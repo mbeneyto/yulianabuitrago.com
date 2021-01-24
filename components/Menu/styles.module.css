@@ -1,0 +1,69 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  display: grid;
+  align-items: center;
+  background-color: var(--primary-color);
+  opacity: 0;
+  visibility: hidden;
+  padding: 0 1em;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay__open {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay__open .option {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.option {
+  margin-bottom: 32px;
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(-50px, 0px, 0px);
+}
+
+.option:nth-child(1) {
+  transition: opacity 0.4s ease-in-out 0.4s, transform 0.4s ease-in-out 0.4s;
+}
+
+.option:nth-child(2) {
+  transition: opacity 0.4s ease-in-out 0.5s, transform 0.4s ease-in-out 0.5s;
+}
+
+.option:nth-child(3) {
+  transition: opacity 0.4s ease-in-out 0.6s, transform 0.4s ease-in-out 0.6s;
+}
+
+.option:nth-child(4) {
+  transition: opacity 0.4s ease-in-out 0.7s, transform 0.4s ease-in-out 0.7s;
+}
+
+.option a {
+  font-size: 24px;
+  font-family: var(--secondary-font-family);
+}
+
+.option span {
+  display: block;
+  color: var(--regular-accent-color);
+}
+
+.option a:hover ~ span {
+  color: var(--text-color);
+}

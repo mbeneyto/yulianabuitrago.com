@@ -1,0 +1,18 @@
+.header {
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.logo {
+  font-family: var(--secondary-font-family);
+}
+
+.logo span:first-child {
+  color: var(--bold-accent-color);
+}

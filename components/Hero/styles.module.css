@@ -1,0 +1,29 @@
+.hero {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0 6em;
+}
+
+.hero > h2 {
+  font-family: var(--secondary-font-family);
+  font-size: 47px;
+}
+
+.presentation > h3 {
+  font-family: var(--secondary-font-family);
+  font-size: 32px;
+}
+
+.presentation > p {
+  margin: 2em 0;
+}
+
+.presentation > h3 > span {
+  color: var(--bold-accent-color);
+}
+
+.presentation > h3 > span:after {
+  content: "\A";
+  white-space: pre-line;
+}

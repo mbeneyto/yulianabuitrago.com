@@ -1,0 +1,50 @@
+:root {
+  --grey-moon: #242424;
+  --dark-earth: #a38464;
+  --light-earth: #c5b2a0;
+  --light-beige: #f7f1ec;
+  --pure-white: #fff;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--primary-font-family, sans-serif);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

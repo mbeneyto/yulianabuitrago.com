@@ -1,0 +1,20 @@
+.footer {
+  border-top: 1px solid var(--regular-accent-color);
+  padding: 3em 0;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.links > li {
+  padding: 0 0.8em;
+}
+
+.footer p {
+  text-align: center;
+  margin: 2em 0;
+  font-size: 0.9em;
+}
