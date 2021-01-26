@@ -1,7 +1,6 @@
 import Head from "next/head"
-import Layout from "../../components/Layout"
-import Date from "../../components/date"
-import { getAllProjectsIds, getProjectData } from "../../lib/projects"
+import Layout from "components/Layout"
+import { getAllProjectsIds, getProjectData } from "../../scripts/projects"
 
 export async function getStaticPaths() {
   const paths = getAllProjectsIds()
@@ -29,9 +28,7 @@ export default function Project({ projectData }) {
       <Layout>
         <article>
           <h1>{projectData.title}</h1>
-          <div>
-            <Date dateString={projectData.date} />
-          </div>
+          <div></div>
           <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
         </article>
       </Layout>

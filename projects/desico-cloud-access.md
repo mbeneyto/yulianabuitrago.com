@@ -1,6 +1,10 @@
 ---
-title: "Two Forms of Pre-rendering"
-date: "2020-01-01"
+title: "Desico Cloud Access:"
+subtitle: "Landing Page"
+type: "Diseño UX & UI"
+gradientTop: "#FCF4CC"
+gradientBottom: "#FBE6C6"
+order: 2
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

@@ -38,11 +38,15 @@ export default function Menu({ open, onCloseMenu }) {
           title="Portfolio"
           subtitle="Echa un vistazo a mis proyectos"
         />
-        <Option url="/side-projects" title="Home" subtitle="Otros trabajos" />
+        <Option
+          url="/side-projects"
+          title="Otros trabajos"
+          subtitle="Profesionales y personales"
+        />
         <Option
           url="/about"
           title="Sobre mí"
-          subtitle="Quién soy yo y cual es mi historia"
+          subtitle="Quién soy yo y como he llegado al UX"
         />
       </nav>
     </div>

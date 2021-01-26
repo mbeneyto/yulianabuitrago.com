@@ -1,8 +1,31 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("/fonts/FjallaOne-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Source Sans Pro SemiBold";
+  src: url("/fonts/SourceSansPro-SemiBold.ttf");
+  font-style: medium;
+  font-weight: 600;
+  font-display: auto;
+}
+
 :root {
   --grey-moon: #242424;
   --dark-earth: #a38464;
   --light-earth: #c5b2a0;
   --light-beige: #f7f1ec;
+  --background: #f2f2f2;
   --pure-white: #fff;
 }
 
@@ -10,7 +33,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--primary-font-family, sans-serif);
+  font-family: var(--primary-font-family);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -34,6 +57,7 @@ a:hover {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }

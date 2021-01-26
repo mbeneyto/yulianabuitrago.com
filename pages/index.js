@@ -1,9 +1,9 @@
 import Head from "next/head"
-import Link from "next/link"
 import Layout from "components/Layout"
-import Date from "components/date"
-import { getSortedProjectsData } from "lib/projects"
-import Hero from "components/Hero"
+import { getSortedProjectsData } from "scripts/projects"
+import Hero from "components/sections/Hero"
+import ProjectCard from "components/ProjectCard"
+import ProjectCardsGrid from "components/ProjectCardsGrid"
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData()
@@ -22,19 +22,11 @@ export default function Home({ allProjectsData }) {
       </Head>
 
       <Hero />
-      <ul>
-        {allProjectsData.map(({ id, date, title }) => (
-          <li key={id}>
-            <Link href={`/projects/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small>
-              <Date dateString={date} />
-            </small>
-          </li>
+      <ProjectCardsGrid>
+        {allProjectsData.map((project) => (
+          <ProjectCard key={project.id} project={project} />
         ))}
-      </ul>
+      </ProjectCardsGrid>
     </Layout>
   )
 }

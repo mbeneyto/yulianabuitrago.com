@@ -1,5 +1,4 @@
 .footer {
-  border-top: 1px solid var(--regular-accent-color);
   padding: 3em 0;
   width: 100%;
 }
@@ -17,4 +16,16 @@
   text-align: center;
   margin: 2em 0;
   font-size: 0.9em;
+}
+
+.footer :global(ul:not(.links)) {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

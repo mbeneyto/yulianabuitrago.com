@@ -16,3 +16,9 @@
 .logo span:first-child {
   color: var(--bold-accent-color);
 }
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 2em 0;
+  }
+}

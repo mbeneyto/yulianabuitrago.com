@@ -1,8 +1,4 @@
-.social {
-  display: flex;
-  justify-content: center;
-}
-
 .social > li {
   padding: 0 0.5em;
+  display: inline-block;
 }

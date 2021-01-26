@@ -1,10 +1,10 @@
 import { useState } from "react"
 import Head from "next/head"
 
-import Contact from "components/Contact"
-import Footer from "components/Footer"
-import Header from "components/Header"
-import Menu from "components/Menu"
+import Contact from "components/sections/Contact"
+import Footer from "components/sections/Footer"
+import Header from "components/sections/Header"
+import Menu from "components/sections/Menu"
 
 import styles from "./styles.module.css"
 

@@ -1,0 +1,41 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  padding: 6em 0;
+}
+
+.hero > h1 {
+  font-family: var(--secondary-font-family);
+  font-size: 47px;
+  margin-bottom: 2rem;
+}
+
+.hero > h2 {
+  font-family: var(--secondary-font-family);
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.hero > h2 > span {
+  color: var(--bold-accent-color);
+}
+
+.hero > h2 > span:after {
+  content: "\A";
+  white-space: pre-line;
+}
+
+.hero :global(ul) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .hero > h1 {
+    grid-column: 1 / 3;
+  }
+}
