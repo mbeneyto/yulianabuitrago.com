@@ -34,8 +34,8 @@ export default function Menu({ open, onCloseMenu }) {
       <nav className={styles.menu}>
         <Option url="/" title="Home" subtitle="Vuelve a la página principal" />
         <Option
-          url="/portfolio"
-          title="Portfolio"
+          url="/projects"
+          title="Proyectos"
           subtitle="Echa un vistazo a mis proyectos"
         />
         <Option

@@ -1,9 +1,8 @@
-import Head from "next/head"
 import Layout from "components/Layout"
 import { getSortedProjectsData } from "scripts/projects"
-import Hero from "components/sections/Hero"
 import ProjectCard from "components/ProjectCard"
 import ProjectCardsGrid from "components/ProjectCardsGrid"
+import styles from "./styles.module.css"
 
 export async function getStaticProps() {
   const allProjectsData = getSortedProjectsData()
@@ -14,18 +13,10 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({ allProjectsData }) {
+export default function Projects({ allProjectsData }) {
   return (
     <Layout>
-      <Head>
-        <title>Yuliana Buitrago González | UX, UI Designer</title>
-        <meta
-          name="description"
-          content="El portolio de Yuliana Buitrado, diseñadora UX & UI"
-        ></meta>
-      </Head>
-
-      <Hero />
+      <h1 className={styles.title}>Proyectos</h1>
       <ProjectCardsGrid>
         {allProjectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />
