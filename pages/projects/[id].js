@@ -1,25 +1,27 @@
-import Head from "next/head"
-import Layout from "components/Layout"
-import { getAllProjectsIds, getProjectData } from "../../scripts/projects"
+import Head from 'next/head'
 
-export async function getStaticPaths() {
+import Layout from '../../components/Layout'
+
+import { getAllProjectsIds, getProjectData } from '../../scripts/projects'
+
+export async function getStaticPaths () {
   const paths = getAllProjectsIds()
   return {
     paths,
-    fallback: false,
+    fallback: false
   }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps ({ params }) {
   const projectData = await getProjectData(params.id)
   return {
     props: {
-      projectData,
-    },
+      projectData
+    }
   }
 }
 
-export default function Project({ projectData }) {
+export default function Project ({ projectData }) {
   return (
     <>
       <Head>

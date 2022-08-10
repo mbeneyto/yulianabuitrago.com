@@ -1,10 +1,12 @@
-import Link from "next/link"
-import clsx from "clsx"
-import styles from "./styles.module.css"
-import { useEffect } from "react"
+import Link from 'next/link'
+import clsx from 'clsx'
 
-export default function Menu({ open, onCloseMenu }) {
-  const Option = ({ url, title, subtitle = "" }) => (
+import { useEffect } from 'react'
+
+import styles from './styles.module.css'
+
+export default function Menu ({ open, onCloseMenu }) {
+  const Option = ({ url, title, subtitle = '' }) => (
     <div className={styles.option}>
       <Link href={url}>
         <a onClick={onCloseMenu}>{title}</a>
@@ -14,18 +16,18 @@ export default function Menu({ open, onCloseMenu }) {
   )
 
   const handleEscapeKeyPress = (event) => {
-    if (event.key === "Escape") {
+    if (event.key === 'Escape') {
       onCloseMenu()
     }
   }
 
   useEffect(() => {
     if (open) {
-      document.addEventListener("keydown", handleEscapeKeyPress)
+      document.addEventListener('keydown', handleEscapeKeyPress)
     }
 
     return () => {
-      document.removeEventListener("keydown", handleEscapeKeyPress)
+      document.removeEventListener('keydown', handleEscapeKeyPress)
     }
   }, [open])
 

@@ -1,6 +1,6 @@
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
 
-export default function Contact() {
+export default function Contact () {
   return (
     <section className={styles.contact}>
       <h3>Di hola 👋</h3>

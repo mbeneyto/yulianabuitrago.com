@@ -1,14 +1,14 @@
-import { useState } from "react"
-import Head from "next/head"
+import { useState } from 'react'
+import Head from 'next/head'
 
-import Contact from "components/sections/Contact"
-import Footer from "components/sections/Footer"
-import Header from "components/sections/Header"
-import Menu from "components/sections/Menu"
+import Contact from '../sections/Contact'
+import Footer from '../sections/Footer'
+import Header from '../sections/Header'
+import Menu from '../sections/Menu'
 
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
 
-export default function Layout({ children }) {
+export default function Layout ({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleToggleMenu = (toggle) => {

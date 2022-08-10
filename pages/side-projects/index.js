@@ -1,7 +1,7 @@
-import Layout from "components/Layout"
-import styles from "./styles.module.css"
+import Layout from '../../components/Layout'
+import styles from './styles.module.css'
 
-export default function SideProjects() {
+export default function SideProjects () {
   return (
     <Layout>
       <h1 className={styles.title}>Otros trabajos</h1>

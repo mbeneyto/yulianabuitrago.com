@@ -1,21 +1,21 @@
-import fs from "fs"
-import path from "path"
-import matter from "gray-matter"
-import remark from "remark"
-import html from "remark-html"
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import remark from 'remark'
+import html from 'remark-html'
 
-const projectsDirectory = path.join(process.cwd(), "projects")
+const projectsDirectory = path.join(process.cwd(), 'projects')
 
-export function getSortedProjectsData() {
+export function getSortedProjectsData () {
   // Get file names under /projects
   const fileNames = fs.readdirSync(projectsDirectory)
   const allProjectsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "")
+    const id = fileName.replace(/\.md$/, '')
 
     // Read markdown file as string
     const fullPath = path.join(projectsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, "utf8")
+    const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents)
@@ -23,7 +23,7 @@ export function getSortedProjectsData() {
     // Combine the data with the id
     return {
       id,
-      ...matterResult.data,
+      ...matterResult.data
     }
   })
   // Sort projects by order
@@ -35,19 +35,19 @@ export function getSortedProjectsData() {
   })
 }
 
-export function getAllProjectsIds() {
+export function getAllProjectsIds () {
   const fileNames = fs.readdirSync(projectsDirectory)
 
   return fileNames.map((fileName) => ({
     params: {
-      id: fileName.replace(/\.md$/, ""),
-    },
+      id: fileName.replace(/\.md$/, '')
+    }
   }))
 }
 
-export async function getProjectData(id) {
+export async function getProjectData (id) {
   const fullPath = path.join(projectsDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, "utf8")
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
@@ -62,6 +62,6 @@ export async function getProjectData(id) {
   return {
     id,
     contentHtml,
-    ...matterResult.data,
+    ...matterResult.data
   }
 }

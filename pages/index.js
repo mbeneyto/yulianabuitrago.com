@@ -1,20 +1,22 @@
-import Head from "next/head"
-import Layout from "components/Layout"
-import { getSortedProjectsData } from "scripts/projects"
-import Hero from "components/sections/Hero"
-import ProjectCard from "components/ProjectCard"
-import ProjectCardsGrid from "components/ProjectCardsGrid"
+import Head from 'next/head'
 
-export async function getStaticProps() {
+import { getSortedProjectsData } from '../scripts/projects'
+
+import Layout from '../components/Layout'
+import Hero from '../components/sections/Hero'
+import ProjectCard from '../components/ProjectCard'
+import ProjectCardsGrid from '../components/ProjectCardsGrid'
+
+export async function getStaticProps () {
   const allProjectsData = getSortedProjectsData()
   return {
     props: {
-      allProjectsData,
-    },
+      allProjectsData
+    }
   }
 }
 
-export default function Home({ allProjectsData }) {
+export default function Home ({ allProjectsData }) {
   return (
     <Layout>
       <Head>

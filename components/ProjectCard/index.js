@@ -1,16 +1,16 @@
-import Link from "next/link"
+import Link from 'next/link'
 
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
 
-export default function ProjectCard({
-  project: { id, title, subtitle, type, gradientTop, gradientBottom },
+export default function ProjectCard ({
+  project: { id, title, subtitle, type, gradientTop, gradientBottom }
 }) {
   return (
     <div
       className={styles.card}
       style={{
-        "--gradient-top": gradientTop,
-        "--gradient-bottom": gradientBottom,
+        '--gradient-top': gradientTop,
+        '--gradient-bottom': gradientBottom
       }}
     >
       <p>{type}</p>

@@ -1,10 +1,10 @@
-import BehanceIcon from "components/icons/behance"
-import LinkedinIcon from "components/icons/linkedin"
-import MediumIcon from "components/icons/medium"
-import TwitterIcon from "components/icons/twitter"
-import styles from "./styles.module.css"
+import BehanceIcon from '../icons/behance'
+import LinkedinIcon from '../icons/linkedin'
+import MediumIcon from '../icons/medium'
+import TwitterIcon from '../icons/twitter'
+import styles from './styles.module.css'
 
-export default function SocialLinks() {
+export default function SocialLinks () {
   return (
     <ul className={styles.social}>
       <li>

@@ -1,7 +1,7 @@
-export default function Linkedin({
+export default function Linkedin ({
   width = 24,
   height = 24,
-  fill = "#242424",
+  fill = '#242424',
   ...rest
 }) {
   return (

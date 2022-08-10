@@ -1,7 +1,8 @@
-import SocialLinks from "components/SocialLinks"
-import styles from "./styles.module.css"
+import SocialLinks from '../..//SocialLinks'
 
-export default function Hero() {
+import styles from './styles.module.css'
+
+export default function Hero () {
   return (
     <div className={styles.hero}>
       <h1>Hola.</h1>

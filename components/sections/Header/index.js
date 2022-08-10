@@ -1,7 +1,8 @@
-import Link from "next/link"
-import styles from "./styles.module.css"
+import Link from 'next/link'
 
-export default function Header({ isMenuOpen, onClickMenuTrigger }) {
+import styles from './styles.module.css'
+
+export default function Header ({ isMenuOpen, onClickMenuTrigger }) {
   return (
     <header className={styles.header}>
       <Link href="/">
@@ -10,7 +11,7 @@ export default function Header({ isMenuOpen, onClickMenuTrigger }) {
           <span>Buitrago</span>
         </a>
       </Link>
-      <button onClick={onClickMenuTrigger}>{isMenuOpen ? "X" : "Menu"}</button>
+      <button onClick={onClickMenuTrigger}>{isMenuOpen ? 'X' : 'Menu'}</button>
     </header>
   )
 }
