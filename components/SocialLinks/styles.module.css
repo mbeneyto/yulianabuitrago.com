@@ -2,3 +2,7 @@
   padding: 0 0.5em;
   display: inline-block;
 }
+
+.social > li:first-of-type {
+  padding-left: 0;
+}
