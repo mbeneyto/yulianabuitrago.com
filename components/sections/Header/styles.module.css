@@ -17,8 +17,19 @@
   color: var(--bold-accent-color);
 }
 
+.menu_btn {
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
 @media (min-width: 1024px) {
   .header {
     padding: 2em 0;
   }
 }
+
+

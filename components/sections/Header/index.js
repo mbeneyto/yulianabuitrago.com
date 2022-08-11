@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import menuIcon from '../../../public/images/icons/menu.svg'
 
 import styles from './styles.module.css'
 
@@ -11,7 +14,14 @@ export default function Header ({ isMenuOpen, onClickMenuTrigger }) {
           <span>Buitrago</span>
         </a>
       </Link>
-      <button onClick={onClickMenuTrigger}>{isMenuOpen ? 'X' : 'Menu'}</button>
+      <button className={styles.menu_btn} onClick={onClickMenuTrigger}>
+        {
+          isMenuOpen
+            ? 'X'
+            : <Image
+              src={menuIcon} />
+        }
+      </button>
     </header>
   )
 }

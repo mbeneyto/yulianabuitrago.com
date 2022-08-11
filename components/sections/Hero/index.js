@@ -7,7 +7,9 @@ export default function Hero () {
     <div className={styles.hero}>
       <h1>Hola.</h1>
       <h2>
-        Soy <span>Yuliana,</span> diseñadora UX & UI
+        Soy <span>Yuliana,</span>
+        diseñadora de <span>Producto</span>
+        & <span>Sistemas de diseño</span>
       </h2>
       <div>
         <SocialLinks className={styles.social} />
