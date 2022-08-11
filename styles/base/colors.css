@@ -1,0 +1,23 @@
+:root {
+	/* =========== */
+	/* BAsE COLORS */
+	/* =========== */
+	--dark-moon: #242424;
+	--grey-moon: #453F3F;
+	--red-moon: #F7ECEC;
+	--dark-earth: #A38464;
+	--light-earth: #C5B2A0;
+	--light-beige: #F7F1EC;
+	--background: #FAFAF9;
+	--pure-white: #FFFFFF;
+
+	/* ================= */
+	/* PROYECT GRADIENTS */
+	/* ================= */
+	--happylacta-gradient: linear-gradient(180deg, #E8B8AF 0%, #FBDCD2 86.88%);
+	--desico-gradient-1: linear-gradient(180deg, #ABD7FF 0%, #E1F1FF 100%);
+	--desico-gradient-2: linear-gradient(180deg, #FCF4CC 0%, #FBE6C6 100%);
+	--desico-gradient-3: linear-gradient(180deg, #F8CE8F 0%, #FBE6C6 100%);
+	--behab-gradient: linear-gradient(180deg, #E9CAFF 0%, #E9FEFF 100%);
+	--uworld-gradient: linear-gradient(180deg, #D4CEFF 21.35%, #ECEBFE 100%);
+}

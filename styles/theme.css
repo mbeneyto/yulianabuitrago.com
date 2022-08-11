@@ -8,12 +8,4 @@
 
   --background-color: var(--primary-color);
   --text-color: var(--secondary-color);
-
-  /* fonts */
-  --primary-font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-  --secondary-font-family: Fjalla One, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
 }

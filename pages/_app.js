@@ -1,3 +1,5 @@
+import '../styles/base/colors.css'
+import '../styles/base/fonts.css'
 import '../styles/globals.css'
 import '../styles/theme.css'
 

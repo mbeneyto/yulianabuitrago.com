@@ -1,6 +1,5 @@
 .card {
-  background-color: var(--gradient-top);
-  background: linear-gradient(var(--gradient-top), var(--gradient-bottom));
+  background: var(--card-gradient);
   border-radius: 10px;
   width: 100%;
   max-width: 460px;

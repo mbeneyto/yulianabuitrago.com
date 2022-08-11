@@ -2,8 +2,7 @@
 title: "Behab:"
 subtitle: "Hábitos de vida saludable"
 type: "Case study"
-gradientTop: "#E9CAFF"
-gradientBottom: "#CCCCCC"
+cardGradient: "behab-gradient"
 order: 3
 ---
 

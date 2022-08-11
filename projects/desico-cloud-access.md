@@ -2,8 +2,7 @@
 title: "Desico Cloud Access:"
 subtitle: "Landing Page"
 type: "Diseño UX & UI"
-gradientTop: "#FCF4CC"
-gradientBottom: "#FBE6C6"
+cardGradient: "desico-gradient-2"
 order: 2
 ---
 

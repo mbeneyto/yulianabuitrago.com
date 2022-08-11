@@ -3,14 +3,13 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 
 export default function ProjectCard ({
-  project: { id, title, subtitle, type, gradientTop, gradientBottom }
+  project: { id, title, subtitle, type, cardGradient }
 }) {
   return (
     <div
       className={styles.card}
       style={{
-        '--gradient-top': gradientTop,
-        '--gradient-bottom': gradientBottom
+        '--card-gradient': `var(--${cardGradient})`
       }}
     >
       <p>{type}</p>
