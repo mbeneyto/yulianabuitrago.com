@@ -1,9 +1,9 @@
 ---
 title: "Behab:"
 subtitle: "Hábitos de vida saludable"
-type: "Case study"
+type: "Proyecto de diseño"
 cardGradient: "behab-gradient"
-order: 3
+order: 5
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

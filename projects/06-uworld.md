@@ -1,7 +1,7 @@
 ---
 title: "Uworld:"
 subtitle: "Seguros de viaje"
-type: "Case study"
+type: "Proyecto de diseño"
 cardGradient: "uworld-gradient"
-order: 4
+order: 6
 ---

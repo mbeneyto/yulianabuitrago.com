@@ -3,7 +3,13 @@ import Link from 'next/link'
 import styles from './styles.module.css'
 
 export default function ProjectCard ({
-  project: { id, title, subtitle, type, cardGradient }
+  project: {
+    id,
+    title,
+    subtitle,
+    type,
+    cardGradient
+  }
 }) {
   return (
     <div
