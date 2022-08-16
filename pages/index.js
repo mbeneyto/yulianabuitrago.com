@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { getSortedProjectsData } from '../scripts/projects'
+import { getProjects } from '../repository/projects'
 
 import Layout from '../components/Layout'
 import Hero from '../components/sections/Hero'
@@ -8,15 +8,15 @@ import ProjectCard from '../components/ProjectCard'
 import ProjectCardsGrid from '../components/ProjectCardsGrid'
 
 export async function getStaticProps () {
-  const allProjectsData = getSortedProjectsData()
+  const projects = getProjects({ pagination: { limit: 4 } })
   return {
     props: {
-      allProjectsData
+      projects
     }
   }
 }
 
-export default function Home ({ allProjectsData }) {
+export default function Home ({ projects }) {
   return (
     <Layout>
       <Head>
@@ -29,7 +29,7 @@ export default function Home ({ allProjectsData }) {
 
       <Hero />
       <ProjectCardsGrid>
-        {allProjectsData.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </ProjectCardsGrid>
