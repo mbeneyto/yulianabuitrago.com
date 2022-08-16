@@ -4,7 +4,6 @@
   justify-content: space-between;
   background: var(--card-gradient);
   border-radius: 8px;
-  box-shadow: 6px 8px 40px 0 rgba(24, 24, 24, 0.1);
 }
 
 /* @media (min-width: 1024px) {

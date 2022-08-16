@@ -1,6 +1,6 @@
 ---
 id: "behab"
-title: "Behab:"
+title: "Behab"
 subtitle: "Hábitos de vida saludable"
 type: "Proyecto de diseño"
 cardGradient: "behab-gradient"
