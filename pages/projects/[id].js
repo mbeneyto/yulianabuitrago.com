@@ -2,10 +2,10 @@ import Head from 'next/head'
 
 import Layout from '../../components/Layout'
 
-import { getAllProjectsIds, getProjectData } from '../../repository/projects'
+import { getProjectsIds, getProjectData } from '../../repository/projects'
 
 export async function getStaticPaths () {
-  const paths = getAllProjectsIds()
+  const paths = getProjectsIds()
   return {
     paths,
     fallback: false

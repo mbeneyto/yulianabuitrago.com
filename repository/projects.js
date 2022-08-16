@@ -14,10 +14,10 @@ export function getProjects ({ pagination = { limit: 10, skip: 0 }, sorting = { 
     const projectFilePath = path.join(projectsDataDirectory, projectFile)
     const projectFileContent = fs.readFileSync(projectFilePath, 'utf8')
 
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(projectFileContent)
+    // Use gray-matter to parse the project metadata section
+    const projectMetadata = matter(projectFileContent)
 
-    return matterResult.data
+    return projectMetadata.data
   })
 
   const { key, order } = sorting
@@ -34,7 +34,7 @@ export function getProjects ({ pagination = { limit: 10, skip: 0 }, sorting = { 
     .slice(skip, limit)
 }
 
-export function getAllProjectsIds () {
+export function getProjectsIds () {
   const fileNames = fs.readdirSync(projectsDataDirectory)
 
   return fileNames.map((fileName) => ({
@@ -45,22 +45,21 @@ export function getAllProjectsIds () {
 }
 
 export async function getProjectData (id) {
-  const fullPath = path.join(projectsDataDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const projectFilePath = path.join(projectsDataDirectory, `${id}.md`)
+  const projectFileContent = fs.readFileSync(projectFilePath, 'utf8')
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents)
+  // Use gray-matter to parse the project metadata section
+  const projectMetadata = matter(projectFileContent)
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
     .use(html)
-    .process(matterResult.content)
+    .process(projectMetadata.content)
   const contentHtml = processedContent.toString()
 
   // Combine the data with the id
   return {
-    id,
     contentHtml,
-    ...matterResult.data
+    ...projectMetadata.data
   }
 }

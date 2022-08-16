@@ -23,7 +23,7 @@ export default function Home ({ projects }) {
         <title>Yuliana Buitrago González | UX, UI Designer</title>
         <meta
           name="description"
-          content="El portolio de Yuliana Buitrado, diseñadora UX & UI"
+          content="Portolio de Yuliana Buitrago, diseñadora UX & UI"
         ></meta>
       </Head>
 
