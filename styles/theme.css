@@ -1,7 +1,8 @@
 :root {
   /* ligth theme */
   --primary-color: var(--background);
-  --secondary-color: var(--grey-moon);
+  --secondary-color: var(--dark-moon);
+  --terciary-color: var(--grey-moon);
   --bold-accent-color: var(--dark-earth);
   --regular-accent-color: var(--light-earth);
   --light-accent-color: var(--light-beige);

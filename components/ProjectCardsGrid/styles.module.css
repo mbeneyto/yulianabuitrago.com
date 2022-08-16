@@ -1,14 +1,6 @@
 .grid {
   margin: 4em 0;
   display: grid;
-  column-gap: 64px;
-  row-gap: 40px;
-  justify-items: center;
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
-    grid-template-rows: 40px;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 80px 56px;
 }

@@ -18,13 +18,14 @@ export default function ProjectCard ({
         '--card-gradient': `var(--${cardGradient})`
       }}
     >
-      <p>{type}</p>
-      <h3>
-        {title} <br /> {subtitle}
-      </h3>
-      <Link href={`/projects/${id}`}>
-        <a>Ver proyecto →</a>
-      </Link>
+      <div className={styles.content}>
+        <p>{type}</p>
+        <h3>{title}</h3>
+        <h4>{subtitle}</h4>
+        <Link href={`/projects/${id}`}>
+          <a>Ver diseño →</a>
+        </Link>
+      </div>
       <img src={`/images/projects/${id}-card.png`} />
     </div>
   )
