@@ -1,31 +1,9 @@
-@font-face {
-  font-family: "Fjalla One";
-  src: url("/fonts/FjallaOne-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-}
-@font-face {
-  font-family: "Source Sans Pro SemiBold";
-  src: url("/fonts/SourceSansPro-SemiBold.ttf");
-  font-style: medium;
-  font-weight: 600;
-  font-display: auto;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: var(--primary-font-family);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: var(--text-color);
@@ -49,8 +27,11 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
+  font-weight: 400;
 }
 
 ul {
