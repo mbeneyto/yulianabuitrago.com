@@ -32,8 +32,9 @@
 }
 
 .option {
-  margin-bottom: 32px;
+  margin-bottom: 4rem;
   text-align: center;
+  cursor: pointer;
   opacity: 0;
   transform: translate3d(-50px, 0px, 0px);
 }
@@ -61,9 +62,11 @@
 
 .option span {
   display: block;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
   color: var(--regular-accent-color);
 }
 
-.option a:hover ~ span {
+.option:hover span {
   color: var(--text-color);
 }

@@ -12,10 +12,12 @@ export default function Layout ({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleToggleMenu = (toggle) => {
+    document.querySelector('body').classList.toggle('block-scroll')
     setIsMenuOpen(toggle)
   }
 
   const handleCloseMenu = () => {
+    document.querySelector('body').classList.toggle('block-scroll')
     handleToggleMenu(false)
   }
 

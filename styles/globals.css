@@ -44,3 +44,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.block-scroll {
+  overflow: hidden;
+}

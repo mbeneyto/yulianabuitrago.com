@@ -9,9 +9,8 @@ export default function Menu ({ open, onCloseMenu }) {
   const Option = ({ url, title, subtitle = '' }) => (
     <div className={styles.option}>
       <Link href={url}>
-        <a onClick={onCloseMenu}>{title}</a>
+        <a onClick={onCloseMenu}>{title} <br /> <span>{subtitle}</span></a>
       </Link>
-      <span>{subtitle}</span>
     </div>
   )
 

@@ -18,7 +18,7 @@ export async function getStaticProps () {
 export default function Projects ({ projects }) {
   return (
     <Layout>
-      <h1 className={styles.title}>Proyectos</h1>
+      <h1 className={styles.title}>Portfolio</h1>
       <ProjectCardsGrid>
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
