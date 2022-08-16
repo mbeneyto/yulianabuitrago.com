@@ -45,6 +45,8 @@
   margin-bottom: 1.5rem;
 }
 
-.card img {
+.image {
+  position: relative;
   width: 100%;
+  height: 300px;
 }

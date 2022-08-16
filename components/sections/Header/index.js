@@ -19,7 +19,9 @@ export default function Header ({ isMenuOpen, onClickMenuTrigger }) {
           isMenuOpen
             ? 'X'
             : <Image
-              src={menuIcon} />
+                src={menuIcon}
+                alt="Menu icon"
+              />
         }
       </button>
     </header>

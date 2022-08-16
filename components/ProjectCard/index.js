@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import styles from './styles.module.css'
 
@@ -26,7 +27,14 @@ export default function ProjectCard ({
           <a>Ver diseño →</a>
         </Link>
       </div>
-      <img src={`/images/projects/${id}-card.png`} />
+      <div className={styles.image}>
+        <Image
+          src={`/images/projects/${id}-card.png`}
+          layout="fill"
+          objectFit='cover'
+          alt="Project card main image"
+        />
+      </div>
     </div>
   )
 }

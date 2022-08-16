@@ -26,10 +26,10 @@ export default function Menu ({ open, onCloseMenu }) {
       document.addEventListener('keydown', handleEscapeKeyPress)
     }
 
-    return () => {
+    return function () {
       document.removeEventListener('keydown', handleEscapeKeyPress)
     }
-  }, [open])
+  })
 
   return (
     <div className={clsx(styles.overlay, open && styles.overlay__open)}>
